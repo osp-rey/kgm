@@ -6,6 +6,10 @@
   display: flex;
   gap: 15px;
 
+  @include laptop-min {
+    gap: 10px;
+  }
+
   &._white {
     .swiper-pagination-bullet {
       --background: white;
@@ -32,12 +36,24 @@
     @include hover {
       opacity: 0.7;
     }
+    @include laptop-middle {
+      width: 70px;
+    }
+    @include laptop-min {
+      flex: 1;
+      width: auto;
+      height: 3px;
+    }
   }
 }
 
 .slider-arrows {
   display: flex;
   gap: 10px;
+
+  @include laptop-min {
+    display: none;
+  }
 }
 .slider-arrow {
   --background: var(--primary);
@@ -74,6 +90,7 @@
       }
     }
   }
+
   &._white {
     --background: white;
     --background-h: black;

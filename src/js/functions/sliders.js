@@ -15,9 +15,9 @@ export default function sliders() {
       controller: {
         control: bgSwiper
       },
-      // autoplay: {
-      //   delay: 6500
-      // },
+      autoplay: {
+        delay: 6500
+      },
       pagination: {
         el: ".s-hero .slider-pagination",
         clickable: true
@@ -26,6 +26,16 @@ export default function sliders() {
         prevEl: ".s-hero .slider-arrow._prev",
         nextEl: ".s-hero .slider-arrow._next"
       }
+    })
+  }
+
+  const catalogNavSlider = document.querySelector(".s-catalog__tabs-nav-slider");
+
+  if (catalogNavSlider) {
+    const swiper = new Swiper(catalogNavSlider, {
+      speed: 900,
+      spaceBetween: 20,
+      slidesPerView: 4
     })
   }
 }
