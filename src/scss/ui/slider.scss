@@ -1,0 +1,108 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.slider-pagination {
+  margin: 0;
+  display: flex;
+  gap: 15px;
+
+  &._white {
+    .swiper-pagination-bullet {
+      --background: white;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    --background: var(--primary);
+
+    cursor: pointer;
+    margin: 0 !important;
+    opacity: 0.2;
+    width: 100px;
+    height: 5px;
+    background-color: var(--background);
+    border-radius: 0px;
+
+    transition: opacity 0.3s ease;
+
+    &.swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+
+    @include hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.slider-arrows {
+  display: flex;
+  gap: 10px;
+}
+.slider-arrow {
+  --background: var(--primary);
+  --background-h: black;
+  --color: white;
+  --color-h: white;
+
+  @include flex-center;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  background-color: var(--background);
+  color: var(--color);
+  font-size: 12px;
+  clip-path: polygon(
+    8px 0%,
+    100% 0%,
+    100% calc(100% - 8px),
+    calc(100% - 8px) 100%,
+    0% 100%,
+    0% 8px
+  );
+
+  transition:
+    color 0.3s ease-in 0.2s,
+    background-color 0.3s ease-in,
+    opacity 0.3s ease;
+
+  @include hover {
+    color: var(--color-h);
+    span {
+      &::before {
+        transform: translateX(0);
+      }
+    }
+  }
+  &._white {
+    --background: white;
+    --background-h: black;
+    --color: black;
+    --color-h: white;
+  }
+
+  &.swiper-button-disabled {
+    pointer-events: none;
+    opacity: 0.65;
+  }
+
+  span {
+    @include flex-center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 150%;
+      height: 100%;
+      transform: translateX(-100%);
+      clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+      background-color: var(--background-h);
+      transition: transform 0.3s ease-in 0.2s;
+      z-index: -1;
+    }
+  }
+}

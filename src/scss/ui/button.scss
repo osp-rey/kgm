@@ -1,0 +1,96 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.btn-s {
+  --border: var(--primary);
+  --background: var(--primary);
+  --color: white;
+  --background-h: black;
+  --color-h: white;
+
+  --clip-path: polygon(
+    8px 0%,
+    100% 0%,
+    100% calc(100% - 8px),
+    calc(100% - 8px) 100%,
+    0% 100%,
+    0% 8px
+  );
+
+  @include flex-center;
+  position: relative;
+  cursor: pointer;
+  width: fit-content;
+  padding: 14px 28px;
+  clip-path: var(--clip-path);
+  overflow: hidden;
+
+  color: var(--color);
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  user-select: none;
+
+  z-index: 1;
+
+  transition:
+    color 0.3s linear 0.2s,
+    background-color 0.3s linear;
+
+  @include hover {
+    color: var(--color-h);
+    &::after {
+      transform: translateX(0);
+    }
+  }
+
+  &._outline {
+    --border: var(--primary);
+    --background: white;
+    --color: var(--primary);
+    --background-h: var(--primary);
+    --color-h: white;
+  }
+  &._white {
+    --border: white;
+    --background: white;
+    --color: var(--primary);
+    --background-h: black;
+    --color-h: white;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    clip-path: var(--clip-path);
+    background-color: var(--border);
+
+    transition: transform 0.3s ease-in 0.2s;
+  }
+
+  &::before {
+    inset: 0;
+    z-index: -2;
+  }
+  &::after {
+    top: -5px;
+    bottom: -5px;
+    left: 0;
+    width: 150%;
+    background-color: var(--background-h);
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+    transform: translateX(-100%);
+    z-index: -1;
+  }
+
+  span {
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 1px;
+      clip-path: var(--clip-path);
+      background-color: var(--background);
+      z-index: -1;
+    }
+  }
+}
