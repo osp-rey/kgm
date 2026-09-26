@@ -1,4 +1,15 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
 :root {
   --primary: #30363c;
   --concrete: #f2f2f2;
+
+  --clip-path: polygon(90px 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 90px);
+  --clip-path-t: polygon(90px 0%, 100% 0%, 100% calc(100% - 90px), calc(100% - 90px) 100%, 0% 100%, 0% 90px);
+
+  @include laptop-min {
+    --clip-path: polygon(45px 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 45px);
+    --clip-path-t: polygon(45px 0%, 100% 0%, 100% calc(100% - 45px), calc(100% - 45px) 100%, 0% 100%, 0% 45px);
+  }
 }

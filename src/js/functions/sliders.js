@@ -53,11 +53,77 @@ export default function sliders() {
       speed: 900,
       spaceBetween: 15,
       slidesPerView: "auto",
-      // autoplay: {
-      //   delay: 5500
-      // },
+      autoplay: {
+        delay: 5500,
+      },
       scrollbar: {
         el: ".s-promo .slider-scrollbar",
+        draggable: true,
+      },
+      breakpoints: {
+        spaceBetween: 24,
+        slidesPerView: "auto",
+      },
+    });
+  }
+
+  const partnersSlider = document.querySelector(".s-partners__slider");
+
+  if (partnersSlider) {
+    const swiper = new Swiper(partnersSlider, {
+      slidesPerView: "auto",
+      spaceBetween: 15,
+      speed: 15000,
+      watchOverflow: true,
+      loop: true,
+      autoplay: {
+        delay: 0,
+      },
+      allowTouchMove: false,
+      watchSlidesProgress: true,
+      a11y: false,
+      breakpoints: {
+        768: {
+          slidesPerView: "auto",
+          spaceBetween: 20,
+        },
+      },
+    });
+  }
+
+  const teamSlider = document.querySelector(".s-team__slider");
+
+  if (teamSlider) {
+    const swiper = new Swiper(teamSlider, {
+      speed: 900,
+      spaceBetween: 15,
+      slidesPerView: "auto",
+      autoplay: {
+        delay: 5500,
+      },
+      scrollbar: {
+        el: ".s-team .slider-scrollbar",
+        draggable: true,
+      },
+      breakpoints: {
+        spaceBetween: 24,
+        slidesPerView: "auto",
+      },
+    });
+  }
+
+  const newsSlider = document.querySelector(".s-news__slider");
+
+  if (newsSlider) {
+    const swiper = new Swiper(newsSlider, {
+      speed: 900,
+      spaceBetween: 15,
+      slidesPerView: "auto",
+      autoplay: {
+        delay: 6000,
+      },
+      scrollbar: {
+        el: ".s-news .slider-scrollbar",
         draggable: true,
       },
       breakpoints: {

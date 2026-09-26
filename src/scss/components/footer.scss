@@ -1,0 +1,158 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.footer {
+  padding: 50px 0px;
+  background-color: var(--primary);
+  color: white;
+
+  @include tablet {
+    padding: 40px 0px;
+  }
+
+  &__grid {
+    display: grid;
+    align-items: start;
+    grid-template-columns: auto 1fr auto;
+    gap: 40px;
+    @include laptop-min {
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+    @include tablet-min {
+      text-align: center;
+    }
+  }
+  &__main {
+    width: 410px;
+    max-width: 100%;
+    @include laptop-middle {
+      width: 330px;
+    }
+    @include laptop-min {
+      width: 100%;
+    }
+  }
+  &__logos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    row-gap: 20px;
+    @include tablet-min {
+      flex-direction: column;
+    }
+  }
+  &__logo {
+    display: block;
+    width: 195px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &__logo-type {
+    display: block;
+    width: 175px;
+  }
+  &__logo-content {
+    max-width: 320px;
+    font-weight: 300;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 15px;
+    @include tablet-min {
+      margin: 0 auto;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 75px;
+    row-gap: 25px;
+    max-width: 665px;
+    margin: 0 auto;
+
+    @include laptop {
+      gap: 30px;
+      row-gap: 20px;
+    }
+    @include laptop-min {
+      margin: 0;
+    }
+    @include tablet-min {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    a {
+      transition: opacity 0.3s ease;
+      @include hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  &__contacts {
+    margin-left: auto;
+
+    @include laptop-min {
+      margin: 0;
+    }
+
+    a {
+      transition: opacity 0.3s ease;
+      @include hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  &__tel {
+    font-size: 28px;
+  }
+  &__address {
+    margin-top: 10px;
+  }
+  &__work-time {
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 10px;
+  }
+  &__bottom {
+    @include flex-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+
+    a {
+      transition: color .3s ease;
+      @include hover {
+        color: white;
+      }
+    }
+
+    @include tablet-min {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+  }
+  &__copyright {
+  }
+  &__bottom-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    row-gap: 25px;
+    @include tablet-min {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}

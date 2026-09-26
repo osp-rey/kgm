@@ -96,3 +96,49 @@
     }
   }
 }
+
+.btn-play {
+  --border: var(--primary);
+  --background: rgba(48, 54, 60, 0.8);
+  --color: white;
+  --border-h: var(--primary);
+  --background-h: var(--primary);
+  --color-h: white;
+
+  @include flex-center;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  color: var(--color);
+  background-color: var(--background);
+
+  font-size: 25px;
+
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+
+  @include hover {
+    background-color: var(--background-h);
+    border-color: var(--border-h);
+    color: var(--color-h);
+  }
+
+  @include tablet {
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+  }
+
+  &._outline-white {
+    --border: white;
+    --background: rgba(48, 54, 60, 0.8);
+    --color: white;
+    --border-h: white;
+    --background-h: white;
+    --color-h: var(--primary);
+  }
+}

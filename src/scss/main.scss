@@ -18,6 +18,9 @@
 @use "./ui/form";
 @use "./ui/card-promo";
 @use "./ui/select";
+@use "./ui/card-team";
+@use "./ui/card-new";
+@use "./ui/social";
 
 @use "./components/header";
 @use "./components/burger";
@@ -27,5 +30,13 @@
 @use "./components/s-promo";
 @use "./components/s-test";
 @use "./components/s-credit";
+@use "./components/s-quiz";
+@use "./components/s-partners";
+@use "./components/s-team";
+@use "./components/s-about";
+@use "./components/s-news";
+@use "./components/s-contacts";
+@use "./components/s-faq";
+@use "./components/s-intro";
 
 @use "./components/footer";

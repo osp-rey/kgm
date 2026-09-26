@@ -31,4 +31,11 @@
   @include laptop-middle {
     margin-bottom: 30px;
   }
+
+  &__wrap {
+    @include flex-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    row-gap: 20px;
+  }
 }
