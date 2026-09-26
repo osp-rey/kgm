@@ -1,15 +1,55 @@
-@use '../base/templates' as *;
-@use '../base/media' as *;
+@use "../base/templates" as *;
+@use "../base/media" as *;
 
 .s-intro {
   position: relative;
+  display: flex;
+  align-items: flex-end;
   z-index: 1;
+  min-height: 800px;
+  padding: 75px 0px;
+  color: white;
+
+  @include laptop {
+    min-height: 600px;
+  }
+  @include laptop-min {
+    padding: 60px 0px;
+  }
+  @include tablet {
+    min-height: 500px;
+    padding: 40px 0px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0) 42.89%,
+      rgba(0, 0, 0, 0.47) 64.71%,
+      rgba(0, 0, 0, 0.58) 74.68%,
+      rgba(0, 0, 0, 0.75) 90.42%
+    );
+    z-index: -1;
+
+    @include laptop-middle {
+      background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.49) 41.43%,
+        rgba(0, 0, 0, 0.75) 95.39%
+      );
+    }
+  }
   &__bg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: -2;
 
     img {
       display: block;
@@ -19,13 +59,65 @@
     }
   }
   &__body {
+    max-width: 650px;
   }
   &__title {
+    @include tablet {
+      font-size: 32px;
+    }
   }
   &__content {
+    margin-top: 25px;
   }
   &__price {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      gap: 25px;
+      margin-top: 25px;
+    }
+
+    .item {
+      &:nth-child(odd) {
+        border-right: 1px solid currentColor;
+      }
+    }
+    .item-name {
+      font-size: 15px;
+      letter-spacing: 0.05em;
+      margin-bottom: 15px;
+      @include tablet {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+    }
+    .item-price {
+      font-weight: 500;
+      font-size: 32px;
+      letter-spacing: 0.05em;
+      @include tablet {
+        font-size: 24px;
+      }
+    }
   }
   &__buttons {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 16px;
+    @include laptop-middle {
+      margin-top: 30px;
+    }
+
+    .btn-s {
+      @include tablet-min {
+        width: 100%;
+      }
+    }
   }
 }
