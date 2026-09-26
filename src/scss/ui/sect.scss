@@ -3,8 +3,32 @@
 
 .sect-m {
   margin: 75px 0px;
+  scroll-margin-top: 175px;
 
   @include laptop-min {
     margin: 60px 0px;
+    scroll-margin-top: 125px;
+  }
+}
+.sect-p {
+  padding: 75px 0px;
+  scroll-margin-top: 100px;
+
+  @include laptop-min {
+    padding: 60px 0px;
+    scroll-margin-top: 65px;
+  }
+
+  &.bg-concrete {
+    background-color: var(--concrete);
+    & + .sect-p.bg-concrete {
+      padding-top: 0 !important;
+    }
+  }
+}
+.sect-head {
+  margin-bottom: 50px;
+  @include laptop-middle {
+    margin-bottom: 30px;
   }
 }

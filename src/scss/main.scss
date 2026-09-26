@@ -16,11 +16,16 @@
 @use "./ui/sect";
 @use "./ui/modal";
 @use "./ui/form";
+@use "./ui/card-promo";
+@use "./ui/select";
 
 @use "./components/header";
 @use "./components/burger";
 
 @use "./components/s-hero";
 @use "./components/s-catalog";
+@use "./components/s-promo";
+@use "./components/s-test";
+@use "./components/s-credit";
 
 @use "./components/footer";

@@ -123,3 +123,25 @@
     }
   }
 }
+
+.slider-scrollbar {
+  margin-top: 60px;
+  height: 1px;
+  background-color: rgba(48, 54, 60, 0.2);
+  @include laptop-middle {
+    margin-top: 40px;
+  }
+  @include laptop-min {
+    margin-top: 25px;
+  }
+}
+.swiper-scrollbar-drag {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    inset: -1px 0px;
+    background-color: var(--primary);
+    z-index: 1;
+  }
+}

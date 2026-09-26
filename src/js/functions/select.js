@@ -1,0 +1,79 @@
+export default function selectHandler() {
+  const selects = document.querySelectorAll(".select");
+
+  if (selects.length) {
+    document.body.addEventListener("click", () => {
+      const openSelects = document.querySelectorAll(".select._open");
+
+      if (openSelects.length)
+        openSelects.forEach((s) => s.classList.remove("_open"));
+    });
+
+    selects.forEach((select) => {
+      select.addEventListener("click", (e) => e.stopPropagation());
+
+      const items = select.querySelectorAll(".select-item");
+      const btn = select.querySelector(".select-btn");
+      const input = select.querySelector(".select-input");
+
+      // handlerChange(Array.from(items)[0]);
+
+      btn.addEventListener("click", () => {
+        select.classList.toggle("_open");
+      });
+
+      items.forEach((item) => {
+        item.addEventListener("click", () => {
+          handlerChange(item);
+        });
+      });
+
+      function handlerChange(item) {
+        const value = item.textContent.trim();
+        input.value = value;
+        select.classList.remove("_open");
+
+        items.forEach((i) => i.classList.remove("_active"));
+        item.classList.add("_active");
+      }
+    });
+  }
+
+  const selectsI = document.querySelectorAll(".select-i");
+
+  if (selectsI.length) {
+    document.body.addEventListener("click", () => {
+      const openSelectsI = document.querySelectorAll(".select-i._open");
+
+      if (openSelectsI.length)
+        openSelectsI.forEach((s) => s.classList.remove("_open"));
+    });
+
+    selectsI.forEach((select) => {
+      select.addEventListener("click", (e) => e.stopPropagation());
+
+      const items = select.querySelectorAll(".select-i-item");
+      const btn = select.querySelector(".select-i-btn");
+      const input = select.querySelector(".select-i-input");
+
+      btn.addEventListener("click", () => {
+        select.classList.toggle("_open");
+      });
+
+      items.forEach((item) => {
+        item.addEventListener("click", () => {
+          handlerChange(item);
+        });
+      });
+
+      function handlerChange(item) {
+        const value = item.textContent.trim();
+        input.value = value;
+        select.classList.remove("_open");
+
+        items.forEach((i) => i.classList.remove("_active"));
+        item.classList.add("_active");
+      }
+    });
+  }
+}

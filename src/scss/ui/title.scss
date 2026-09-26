@@ -16,3 +16,29 @@
     font-size: 28px;
   }
 }
+
+.s-title {
+  font-weight: 500;
+  font-size: 32px;
+  margin: 0;
+
+  @include laptop-middle {
+    font-size: 28px;
+  }
+  @include laptop-min {
+    font-size: 26px;
+  }
+}
+
+.t-title {
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0;
+
+  @include laptop-middle {
+    font-size: 22px;
+  }
+  @include laptop-min {
+    font-size: 20px;
+  }
+}
