@@ -25,6 +25,12 @@
       padding-top: 0 !important;
     }
   }
+  &.bg-linear {
+    background: linear-gradient(270deg, #30363c 0%, #435465 100%);
+    & + .sect-p.bg-linear {
+      padding-top: 0 !important;
+    }
+  }
 }
 .sect-head {
   margin-bottom: 50px;

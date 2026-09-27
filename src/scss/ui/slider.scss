@@ -4,6 +4,7 @@
 .slider-pagination {
   margin: 0;
   display: flex;
+  justify-content: center;
   gap: 15px;
 
   @include laptop-min {
@@ -68,6 +69,7 @@
   background-color: var(--background);
   color: var(--color);
   font-size: 12px;
+  flex-shrink: 0;
   clip-path: polygon(
     8px 0%,
     100% 0%,
@@ -96,6 +98,12 @@
     --background-h: black;
     --color: black;
     --color-h: white;
+  }
+  &._opacity-white {
+    --background: rgba(255, 255, 255, 0.2);
+    --background-h: white;
+    --color: white;
+    --color-h: black;
   }
 
   &.swiper-button-disabled {

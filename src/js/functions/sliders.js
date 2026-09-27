@@ -132,4 +132,39 @@ export default function sliders() {
       },
     });
   }
+
+  const colorsSliders = document.querySelectorAll(".s-colors__slider");
+
+  if (colorsSliders.length) {
+    colorsSliders.forEach(slider => {
+      const wrap = slider.closest("[data-tab]");
+
+      const swiper = new Swiper(slider, {
+        speed: 900,
+        spaceBetween: 10,
+        slidesPerView: 1,
+        autoplay: {
+          delay: 5500
+        },
+        pagination: {
+          el: wrap.querySelector(".slider-pagination"),
+          clickable: true
+        },
+        navigation: {
+          prevEl: wrap.querySelector(".slider-arrow._prev"),
+          nextEl: wrap.querySelector(".slider-arrow._next")
+        }
+      })
+    })
+  }
+
+  const colorsTabsNavSlider = document.querySelector(".s-colors__tabs-nav");
+
+  if (colorsTabsNavSlider) {
+    const swiper = new Swiper(colorsSliders, {
+      speed: 900,
+      slidesPerView: "auto",
+      spaceBetween: 12
+    })
+  }
 }

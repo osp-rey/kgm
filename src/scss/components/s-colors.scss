@@ -1,0 +1,66 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-colors {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &__decor {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  &__slider-wrapper {
+    @include flex-center;
+    gap: 10px;
+
+    .slider-arrow {
+      position: relative;
+      z-index: 1;
+
+      @include laptop-min {
+        display: none;
+      }
+    }
+  }
+  &__slider {
+    width: 1200px;
+    overflow: visible !important;
+    max-width: 100%;
+    margin: 0 !important;
+
+    @include laptop {
+      width: 1055px;
+    }
+    @include laptop-middle {
+      width: 880px;
+    }
+    @include laptop-min {
+      width: 100%;
+    }
+  }
+  &__slide {
+    &.swiper-slide-active {
+      img {
+        opacity: 1;
+      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 0.5s linear !important;
+    }
+  }
+  &__tabs-nav {
+    width: fit-content !important;
+    margin: 0px auto 0px auto;
+    margin-top: 30px;
+  }
+  &__tab-btn {
+  }
+}
