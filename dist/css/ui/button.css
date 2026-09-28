@@ -1,0 +1,152 @@
+.btn-s {
+  --border: var(--primary);
+  --background: var(--primary);
+  --color: white;
+  --background-h: black;
+  --color-h: white;
+  --clip-path: polygon(
+    8px 0%,
+    100% 0%,
+    100% calc(100% - 8px),
+    calc(100% - 8px) 100%,
+    0% 100%,
+    0% 8px
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  width: fit-content;
+  padding: 14px 28px;
+  clip-path: var(--clip-path);
+  overflow: hidden;
+  outline: none;
+  border: none;
+  color: var(--color);
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  user-select: none;
+  z-index: 1;
+  transition: color 0.3s linear 0.2s, background-color 0.3s linear;
+}
+
+.btn-s._outline {
+  --border: var(--primary);
+  --background: white;
+  --color: var(--primary);
+  --background-h: var(--primary);
+  --color-h: white;
+}
+
+.btn-s._white {
+  --border: white;
+  --background: white;
+  --color: var(--primary);
+  --background-h: black;
+  --color-h: white;
+}
+
+.btn-s::before,
+.btn-s::after {
+  position: absolute;
+  content: "";
+  clip-path: var(--clip-path);
+  background-color: var(--border);
+  transition: transform 0.3s ease-in 0.2s;
+}
+
+.btn-s::before {
+  inset: 0;
+  z-index: -2;
+}
+
+.btn-s::after {
+  top: -5px;
+  bottom: -5px;
+  left: 0;
+  width: 150%;
+  background-color: var(--background-h);
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+  transform: translateX(-100%);
+  z-index: -1;
+}
+
+.btn-s span::before {
+  position: absolute;
+  content: "";
+  inset: 1px;
+  clip-path: var(--clip-path);
+  background-color: var(--background);
+  z-index: -1;
+}
+
+.btn-play {
+  --border: var(--primary);
+  --background: rgba(48, 54, 60, 0.8);
+  --color: white;
+  --border-h: var(--primary);
+  --background-h: var(--primary);
+  --color-h: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  color: var(--color);
+  background-color: var(--background);
+  font-size: 25px;
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-play._outline-white {
+  --border: white;
+  --background: rgba(48, 54, 60, 0.8);
+  --color: white;
+  --border-h: white;
+  --background-h: white;
+  --color-h: var(--primary);
+}
+
+@media (max-width: 767px) {
+  .btn-play {
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+  }
+}
+
+@media (any-hover: hover) {
+  .btn-s:hover {
+    color: var(--color-h);
+  }
+
+  .btn-s:hover::after {
+    transform: translateX(0);
+  }
+
+  .btn-play:hover {
+    background-color: var(--background-h);
+    border-color: var(--border-h);
+    color: var(--color-h);
+  }
+}
+
+@media (hover: none) {
+  .btn-s:active {
+    color: var(--color-h);
+  }
+
+  .btn-s:active::after {
+    transform: translateX(0);
+  }
+
+  .btn-play:active {
+    background-color: var(--background-h);
+    border-color: var(--border-h);
+    color: var(--color-h);
+  }
+}

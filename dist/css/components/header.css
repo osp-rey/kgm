@@ -1,0 +1,202 @@
+.header {
+  position: sticky;
+  top: 0;
+  padding: 25px 0px;
+  background-color: white;
+  z-index: 100;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.header__logos {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header__logo {
+  display: block;
+  width: 195px;
+}
+
+.header__logo img {
+  display: block;
+  width: 100%;
+}
+
+.header__logo-type {
+  display: block;
+  width: 175px;
+}
+
+.header__info {
+  display: flex;
+  align-items: start;
+  gap: 40px;
+}
+
+.header__info-item .item-name {
+  font-weight: 300;
+  font-size: 12px;
+  color: var(--primary);
+  opacity: 0.5;
+  margin-bottom: 5px;
+}
+
+.header__info-item a.item-val {
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.header__mob {
+  display: flex;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+.header__tel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  font-size: 24px;
+}
+
+.header__burger-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  font-size: 14px;
+}
+
+.header-n {
+  border-top: 1px solid rgba(48, 54, 60, 0.2);
+}
+
+.header-n__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.header-n__list a {
+  display: block;
+  font-weight: 500;
+  padding: 13px 25px;
+  transition: color 0.3s ease;
+}
+
+@media (min-width: 1026px) {
+  .header__mob {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1365px) {
+  .header {
+    padding: 20px 0px;
+  }
+
+  .header__wrapper {
+    gap: 20px;
+  }
+
+  .header__logos {
+    gap: 20px;
+  }
+
+  .header__logo {
+    width: 150px;
+  }
+
+  .header__logo-type {
+    width: 130px;
+  }
+
+  .header__info {
+    gap: 20px;
+  }
+
+  .header__info-item a.item-val {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .header__buttons .btn-s._calc {
+    display: none;
+  }
+
+  .header-n__list {
+    gap: 15px;
+  }
+
+  .header-n__list a {
+    font-size: 15px;
+    padding: 10px 18px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .header {
+    padding: 15px 0px;
+  }
+
+  .header__info {
+    display: none;
+  }
+
+  .header-n {
+    position: absolute;
+    left: -9999px;
+    z-index: -9999;
+  }
+}
+
+@media (max-width: 575px) {
+  .header__logos {
+    gap: 15px;
+  }
+
+  .header__logo {
+    width: 125px;
+  }
+
+  .header__logo-type {
+    width: 120px;
+  }
+}
+
+@media (any-hover: hover) {
+  .header__info-item a.item-val:hover {
+    opacity: 0.8;
+  }
+
+  .header-n__list a:hover {
+    color: black;
+  }
+}
+
+@media (hover: none) {
+  .header__info-item a.item-val:active {
+    opacity: 0.8;
+  }
+
+  .header-n__list a:active {
+    color: black;
+  }
+}

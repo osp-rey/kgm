@@ -1,0 +1,85 @@
+.fancybox__backdrop {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.modal {
+  display: none;
+  padding: 45px 30px 30px 30px !important;
+  width: 600px;
+  max-width: 100%;
+  clip-path: polygon(16px 0%, 100% 0%, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0% 100%, 0% 16px);
+  cursor: auto;
+}
+
+.modal__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  font-size: 24px;
+  transition: opacity 0.3s ease;
+}
+
+.modal__body {
+  width: 100%;
+}
+
+.modal__title {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+
+.modal__content {
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+}
+
+.modal__form {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.modal__form .form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.modal__form .btn-s[type=submit] {
+  width: 100%;
+}
+
+@media (max-width: 1025px) {
+  .modal__title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal {
+    padding: 45px 18px 20px 18px !important;
+  }
+
+  .modal__title {
+    font-size: 26px;
+  }
+}
+
+@media (any-hover: hover) {
+  .modal__close:hover {
+    opacity: 0.7;
+  }
+}
+
+@media (hover: none) {
+  .modal__close:active {
+    opacity: 0.7;
+  }
+}

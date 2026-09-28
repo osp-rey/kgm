@@ -1,0 +1,24 @@
+.s-promo {
+  overflow: hidden;
+}
+
+.s-promo__slider {
+  overflow: visible !important;
+}
+
+.s-promo__slider .swiper-slide {
+  height: auto !important;
+  box-sizing: border-box;
+  width: 450px !important;
+  max-width: 100%;
+}
+
+.s-promo__slider .swiper-slide .card-promo {
+  height: 100%;
+}
+
+@media (max-width: 1025px) {
+  .s-promo__slider .swiper-slide {
+    width: 340px !important;
+  }
+}
