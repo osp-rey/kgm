@@ -6,8 +6,10 @@ import inputmask from "./functions/inputmask.js";
 import map from "./functions/map.js";
 import selectHandler from "./functions/select.js";
 import sliders from "./functions/sliders.js";
+import specWrap from "./functions/specWrap.js";
 import spoller from "./functions/spoller.js";
 import tab from "./functions/tab.js";
+import topHead from "./functions/topHead.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   burger();
@@ -20,6 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
   map();
   spoller();
   anchors();
+  specWrap();
+  topHead();
 
   Fancybox.bind("[data-fancybox]", {
     closeButton: false,

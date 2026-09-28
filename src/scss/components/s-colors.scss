@@ -4,6 +4,7 @@
 .s-colors {
   position: relative;
   overflow: hidden;
+  color: white;
   z-index: 1;
   &__decor {
     position: absolute;
@@ -56,11 +57,55 @@
       transition: opacity 0.5s linear !important;
     }
   }
+  &__tab-name {
+    margin-top: 30px;
+    text-align: center;
+
+    @include tablet {
+      margin-top: 20px;
+    }
+  }
   &__tabs-nav {
     width: fit-content !important;
-    margin: 0px auto 0px auto;
-    margin-top: 30px;
+    max-width: 100%;
+    margin: 30px auto 0px auto;
+    overflow: visible !important;
   }
   &__tab-btn {
+    overflow: hidden;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 185px !important;
+    max-width: 100%;
+    clip-path: polygon(16px 0%, 100% 0%, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0% 100%, 0% 16px);
+    aspect-ratio: 1/0.55;
+
+    transition: background-color .3s ease !important;
+
+    @include tablet {
+      width: 150px !important;
+    }
+    @include hover {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+    &._active {
+      background-color: white;
+      pointer-events: none;
+    }
+
+    img {
+      display: block;
+      width: 150px;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+
+      @include tablet {
+        width: 130px;
+      }
+    }
   }
 }

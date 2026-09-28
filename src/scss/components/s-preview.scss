@@ -2,6 +2,16 @@
 @use "../base/media" as *;
 
 .s-preview {
+  @include laptop-min {
+    overflow: hidden;
+  }
+  &__head-wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 130px;
+    row-gap: 20px;
+  }
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

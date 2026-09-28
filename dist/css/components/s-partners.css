@@ -1,0 +1,30 @@
+.s-partners {
+  overflow: hidden;
+}
+
+.s-partners__slider {
+  overflow: visible !important;
+}
+
+.s-partners__slider .swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.s-partners__slide {
+  background-color: var(--concrete);
+  width: 320px !important;
+}
+
+.s-partners__slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: contain;
+}
+
+@media (max-width: 575px) {
+  .s-partners__slide {
+    width: 280px !important;
+  }
+}

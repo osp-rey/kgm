@@ -70,6 +70,11 @@
       border-color: var(--border-a);
     }
   }
+
+  label {
+    display: block;
+    width: fit-content;
+  }
 }
 .wpcf7-list-item {
   margin-left: 0;
@@ -78,6 +83,7 @@
   cursor: pointer;
   display: flex;
   align-items: start;
+  width: fit-content;
   gap: 15px;
   user-select: none;
 

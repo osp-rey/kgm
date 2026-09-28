@@ -1,0 +1,29 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.s-archive {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    @include laptop-min {
+      gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include tablet {
+      gap: 10px;
+      row-gap: 15px;
+    }
+    @include tablet-min {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__more-btn {
+    width: 350px;
+    max-width: 100%;
+    margin: 30px auto 0px auto;
+  }
+}

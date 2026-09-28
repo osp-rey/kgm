@@ -1,6 +1,17 @@
-@use '../base/templates' as *;
-@use '../base/media' as *;
+@use "../base/templates" as *;
+@use "../base/media" as *;
 
+.main-head {
+  padding: 25px 0px;
+  background-color: var(--concrete);
+  margin-bottom: 50px;
+  @include laptop-middle {
+    margin-bottom: 30px;
+  }
+  @include tablet {
+    padding: 18px 0px;
+  }
+}
 .sect-m {
   margin: 75px 0px;
   scroll-margin-top: 175px;

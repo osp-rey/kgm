@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" href="./files/favicon.ico">
+<link rel="stylesheet" href="./files/icomoon/style.css">
+<link rel="stylesheet" href="./css/main.css?ver=mul2fhx2">
+<link rel="stylesheet" href="./files/swiper/swiper.min.css">
+<link rel="stylesheet" href="./files/fancybox/fancybox.min.css">
+<title>KGM</title>
+</head>
+<body class="body">
+
+  <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__logos">
+        <a href="/" class="header__logo">
+          <img src="img/logo.svg" alt="logo" />
+        </a>
+        <img src="img/logo-2.svg" alt="logo" class="header__logo-type" />
+      </div>
+      <div class="header__info">
+        <div class="header__info-item">
+          <div class="item-name">Адрес:</div>
+          <div class="item-val">г. Самара, Южное шоссе 10А</div>
+        </div>
+        <div class="header__info-item">
+          <div class="item-name">Отдел продаж:</div>
+          <a href="tel:+7846115946" class="item-val">+7 (846) 211-59-46</a>
+        </div>
+        <div class="header__buttons">
+          <a href="#modal-feedback" data-fancybox class="btn-s _outline">
+            <span>Заказать звонок</span>
+          </a>
+          <a href="/#s-credit" class="btn-s _calc anchor">
+            <span>Рассчитать платеж</span>
+          </a>
+        </div>
+      </div>
+      <div class="header__mob">
+        <a href="tel:+7846115946" class="header__tel">
+          <i class="icon-tel"></i>
+        </a>
+        <div class="header__burger-btn" id="burger-open">
+          <i class="icon-burger"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<nav class="header-n">
+  <div class="container">
+    <ul class="list header-n__list anchors">
+      <li><a href="/#s-catalog">Модели</a></li>
+      <li><a href="/#s-promo">Специальные предложения</a></li>
+      <li><a href="/#s-tradein">Трейд-ин</a></li>
+      <li><a href="/#s-credit">Рассрочка</a></li>
+      <li><a href="/#s-test">Тест-драйв</a></li>
+      <li><a href="/#s-reviews">Отзывы</a></li>
+      <li><a href="/#s-contacts">Контакты</a></li>
+    </ul>
+  </div>
+</nav>
+
+<aside>
+  <div class="burger-overlay" id="burger-overlay" data-burger-close></div>
+  <div class="burger" id="burger">
+    <div class="burger__head">
+      <a href="/" class="burger__logo">
+        <img src="img/logo.svg" alt="logo" />
+      </a>
+      <div class="burger__close" data-burger-close>
+        <i class="icon-close"></i>
+      </div>
+    </div>
+    <ul class="list burger__list anchors">
+      <li><a href="/#s-catalog">Модели</a></li>
+      <li><a href="/#s-promo">Специальные предложения</a></li>
+      <li><a href="/#s-tradein">Трейд-ин</a></li>
+      <li><a href="/#s-credit">Рассрочка</a></li>
+      <li><a href="/#s-test">Тест-драйв</a></li>
+      <li><a href="/#s-reviews">Отзывы</a></li>
+      <li><a href="/#s-contacts">Контакты</a></li>
+    </ul>
+    <div class="burger__info">
+      <div class="burger__info-item">
+        <div class="item-name">Адрес:</div>
+        <div class="item-val">г. Самара, Южное шоссе 10А</div>
+      </div>
+      <div class="burger__info-item">
+        <div class="item-name">Отдел продаж:</div>
+        <a href="tel:+7846115946" class="item-val">+7 (846) 211-59-46</a>
+      </div>
+      <div class="burger__buttons">
+        <a href="#modal-feedback" data-fancybox class="btn-s _outline">
+          <span>Заказать звонок</span>
+        </a>
+        <a href="/#s-credit" class="btn-s _calc anchor">
+          <span>Рассчитать платеж</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</aside>
+
+  <aside>
+  <div class="modal" id="modal-feedback">
+    <div data-fancybox-close class="modal__close">
+      <i class="icon-close"></i>
+    </div>
+    <div class="modal__body">
+      <div class="modal__title" data-text="Связаться с нами">Связаться с нами</div>
+      <div class="content-box modal__content">
+        <p>Оставьте заявку и мы свяжемся с Вами в ближайшее время</p>
+      </div>
+      <form action="#" class="modal__form">
+        <div style="display: none;">
+          <input type="text" class="input-note">
+        </div>
+        <div class="form-grid">
+          <div class="form-control">
+            <input type="text" placeholder="Имя" class="input" />
+          </div>
+          <div class="form-control">
+            <input type="tel" placeholder="Телефон" class="input" />
+          </div>
+          <div class="form-control">
+            <div class="check-wrap">
+              <span class="wpcf7-form-control-wrap" data-name="acceptance-60">
+                <span class="wpcf7-form-control wpcf7-acceptance">
+                  <span class="wpcf7-list-item">
+                    <label>
+                      <input
+                        type="checkbox"
+                        name="acceptance-60"
+                        value="1"
+                        aria-invalid="false"
+                      />
+                      <span class="wpcf7-list-item-label">
+                        <span>
+                          Я соглашаюсь с 
+                          <a href="/personal-data" target="_blank">
+                            Правилами обработки персональных данных
+                          </a>
+                        </span>
+                      </span>
+                    </label>
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="form-control">
+            <div class="check-wrap">
+              <span class="wpcf7-form-control-wrap" data-name="acceptance-60">
+                <span class="wpcf7-form-control wpcf7-acceptance">
+                  <span class="wpcf7-list-item">
+                    <label>
+                      <input
+                        type="checkbox"
+                        name="acceptance-60"
+                        value="1"
+                        aria-invalid="false"
+                      />
+                      <span class="wpcf7-list-item-label">
+                        <span>
+                          Я соглашаюсь на получение
+                          <a href="/advertising-mail" target="_blank">
+                            информационно-рекламной рассылки
+                          </a>
+                        </span>
+                      </span>
+                    </label>
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <button type="submit" class="btn-s"><span>Отправить</span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="modal" id="modal-thank">
+    <div class="modal__body">
+      <div class="modal__title">Благодарим за заявку</div>
+      <div class="content-box modal__content">
+        <p>Мы свяжемся с Вами в ближайшее время</p>
+      </div>
+    </div>
+  </div>
+</aside>
+
+  
+  <main>
+    <section class="s-hero">
+  <div class="s-hero__bg-slider swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide s-hero__bg-slide">
+        <picture>
+          <img src="img/hero-1.jpg" alt="image" />
+        </picture>
+      </div>
+      <div class="swiper-slide s-hero__bg-slide">
+        <picture>
+          <img src="img/hero-2.jpg" alt="image" />
+        </picture>
+      </div>
+      <div class="swiper-slide s-hero__bg-slide">
+        <picture>
+          <img src="img/hero-1.jpg" alt="image" />
+        </picture>
+      </div>
+      <div class="swiper-slide s-hero__bg-slide">
+        <picture>
+          <img src="img/hero-2.jpg" alt="image" />
+        </picture>
+      </div>
+    </div>
+  </div>
+  <div class="swiper s-hero__slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide s-hero__slide">
+        <div class="container">
+          <div class="s-hero__slide-body">
+            <div class="s-hero__slide-title m-title">
+              Официальный дилер KGM
+              <br />
+              в Самаре
+            </div>
+            <div class="content-box s-hero__slide-content">
+              <p>
+                Картельные сговоры не допускают ситуации, при которой
+                стремящиеся вытеснить традиционное производство, нанотехнологии
+                представляют собой не что иное, как квинтэссенцию победы
+                маркетинга над разумом и должны быть описаны максимально
+                подробно.
+              </p>
+            </div>
+            <div class="s-hero__buttons">
+              <a href="#modal-feedback" data-fancybox class="btn-s">
+                <span>Оставить заявку</span>
+              </a>
+              <a href="#s-catalog" class="btn-s _white">
+                <span>Посмотреть модельный ряд</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide s-hero__slide">
+        <div class="container">
+          <div class="s-hero__slide-body">
+            <div class="s-hero__slide-title m-title">
+              Официальный дилер KGM
+              <br />
+              в Самаре 2
+            </div>
+            <div class="content-box s-hero__slide-content">
+              <p>
+                Картельные сговоры не допускают ситуации, при которой
+                стремящиеся вытеснить традиционное производство, нанотехнологии
+                представляют собой не что иное, как квинтэссенцию победы
+                маркетинга над разумом и должны быть описаны максимально
+                подробно.
+              </p>
+            </div>
+            <div class="s-hero__buttons">
+              <a href="#modal-feedback" data-fancybox class="btn-s">
+                <span>Оставить заявку</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide s-hero__slide">
+        <div class="container">
+          <div class="s-hero__slide-body">
+            <div class="s-hero__slide-title m-title">
+              Официальный дилер KGM
+              <br />
+              в Самаре
+            </div>
+            <div class="s-hero__buttons">
+              <a href="#modal-feedback" data-fancybox class="btn-s">
+                <span>Оставить заявку</span>
+              </a>
+              <a href="#s-catalog" class="btn-s _white">
+                <span>Посмотреть модельный ряд</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide s-hero__slide">
+        <div class="container">
+          <div class="s-hero__slide-body">
+            <div class="s-hero__slide-title m-title">
+              Официальный дилер KGM
+              <br />
+              в Самаре
+            </div>
+            <div class="content-box s-hero__slide-content">
+              <p>
+                Картельные сговоры не допускают ситуации, при которой
+                стремящиеся вытеснить традиционное производство, нанотехнологии
+                представляют собой не что иное, как квинтэссенцию победы
+                маркетинга над разумом и должны быть описаны максимально
+                подробно.
+              </p>
+            </div>
+            <div class="s-hero__buttons">
+              <a href="#modal-feedback" data-fancybox class="btn-s">
+                <span>Оставить заявку</span>
+              </a>
+              <a href="#s-catalog" class="btn-s _white">
+                <span>Посмотреть модельный ряд</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="s-hero__slider-nav">
+    <div class="container">
+      <div class="s-hero__slider-nav-wrap">
+        <div class="slider-pagination _white"></div>
+        <div class="slider-arrows">
+          <div class="slider-arrow _prev _white">
+            <span>
+              <i class="icon-prev"></i>
+            </span>
+          </div>
+          <div class="slider-arrow _next _white">
+            <span>
+              <i class="icon-next"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-m s-catalog" id="s-catalog">
+  <div class="container tabs">
+    <div class="s-catalog__wrap">
+      <div class="s-catalog__col">
+        <div class="sect-head">
+          <div class="s-title">Выберите модельный ряд</div>
+        </div>
+        <div class="s-catalog__tabs-nav-slider tabs-nav swiper">
+          <div class="swiper-wrapper">
+            <div
+              data-tab-btn="tab-catalog-0"
+              class="swiper-slide s-catalog__tab-btn _active"
+            >
+              <img
+                src="img/catalog-preview.png"
+                alt="image"
+                class="item-preview"
+              />
+              <span class="item-name">KORANDO</span>
+            </div>
+            <div
+              data-tab-btn="tab-catalog-1"
+              class="swiper-slide s-catalog__tab-btn"
+            >
+              <img
+                src="img/catalog-preview.png"
+                alt="image"
+                class="item-preview"
+              />
+              <span class="item-name">TORRES</span>
+            </div>
+            <div
+              data-tab-btn="tab-catalog-2"
+              class="swiper-slide s-catalog__tab-btn"
+            >
+              <img
+                src="img/catalog-preview.png"
+                alt="image"
+                class="item-preview"
+              />
+              <span class="item-name">REXTON</span>
+            </div>
+            <div
+              data-tab-btn="tab-catalog-3"
+              class="swiper-slide s-catalog__tab-btn"
+            >
+              <img
+                src="img/catalog-preview.png"
+                alt="image"
+                class="item-preview"
+              />
+              <span class="item-name">TIVOLI</span>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-content">
+          <div data-tab="tab-catalog-0" class="_active _show">
+            <div class="s-catalog__info">
+              <div class="s-catalog__info-head">
+                <div class="s-catalog__info-title">KORANDO</div>
+                <div class="s-catalog__price">от 3 254 000 ₽</div>
+              </div>
+              <div class="s-catalog__price-grid">
+                <div class="item-grid">
+                  <div class="item-name">Выгода до</div>
+                  <div class="item-price">499 000 ₽</div>
+                </div>
+                <div class="item-grid">
+                  <div class="item-name">Еж. платеж</div>
+                  <div class="item-price">от 6 000 ₽</div>
+                </div>
+              </div>
+              <div class="content-box s-catalog__info-content">
+                <p>
+                  Кроссовер, вдохновленный дикой природой, ее бурными реками,
+                  крутыми горами и духом путешествий. Названный в честь
+                  национального парка Торрес‑дель‑Пайне в Патагонии, этот
+                  автомобиль отличается динамичным и брутальным характером.
+                </p>
+              </div>
+              <ul class="list list-p s-catalog__info-list">
+                <li>Кредит от 0,01% на срок до 96 месяцев</li>
+                <li>Выгода в трейд-ин – до 250 000 ₽</li>
+                <li>Покупка за 1 день</li>
+              </ul>
+              <div class="s-catalog__info-buttons">
+                <a
+                  href="#modal-feedback"
+                  data-fancybox
+                  data-modal-title="Запись на тест-драйв"
+                  data-target-note="#modal-feedback .input-note"
+                  data-btn-note="Запись на тест драйв: KORANDO"
+                  class="btn-s"
+                >
+                  <span>Записаться на тест-драйв</span>
+                </a>
+                <a href="#" class="btn-s _outline">
+                  <span>Подробнее о модели</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div data-tab="tab-catalog-1">
+            <div class="s-catalog__info">
+              <div class="s-catalog__info-head">
+                <div class="s-catalog__info-title">TORRES</div>
+                <div class="s-catalog__price">от 3 254 000 ₽</div>
+              </div>
+              <div class="s-catalog__price-grid">
+                <div class="item-grid">
+                  <div class="item-name">Выгода до</div>
+                  <div class="item-price">499 000 ₽</div>
+                </div>
+                <div class="item-grid">
+                  <div class="item-name">Еж. платеж</div>
+                  <div class="item-price">от 6 000 ₽</div>
+                </div>
+              </div>
+              <div class="content-box s-catalog__info-content">
+                <p>
+                  Кроссовер, вдохновленный дикой природой, ее бурными реками,
+                  крутыми горами и духом путешествий. Названный в честь
+                  национального парка Торрес‑дель‑Пайне в Патагонии, этот
+                  автомобиль отличается динамичным и брутальным характером.
+                </p>
+              </div>
+              <ul class="list list-p s-catalog__info-list">
+                <li>Кредит от 0,01% на срок до 96 месяцев</li>
+                <li>Выгода в трейд-ин – до 250 000 ₽</li>
+                <li>Покупка за 1 день</li>
+              </ul>
+              <div class="s-catalog__info-buttons">
+                <a
+                  href="#modal-feedback"
+                  data-fancybox
+                  data-modal-title="Запись на тест-драйв"
+                  data-target-note="#modal-feedback .input-note"
+                  data-btn-note="Запись на тест драйв: KORANDO"
+                  class="btn-s"
+                >
+                  <span>Записаться на тест-драйв</span>
+                </a>
+                <a href="#" class="btn-s _outline">
+                  <span>Подробнее о модели</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div data-tab="tab-catalog-2">
+            <div class="s-catalog__info">
+              <div class="s-catalog__info-head">
+                <div class="s-catalog__info-title">REXTON</div>
+                <div class="s-catalog__price">от 3 254 000 ₽</div>
+              </div>
+              <div class="s-catalog__price-grid">
+                <div class="item-grid">
+                  <div class="item-name">Выгода до</div>
+                  <div class="item-price">499 000 ₽</div>
+                </div>
+                <div class="item-grid">
+                  <div class="item-name">Еж. платеж</div>
+                  <div class="item-price">от 6 000 ₽</div>
+                </div>
+              </div>
+              <div class="content-box s-catalog__info-content">
+                <p>
+                  Кроссовер, вдохновленный дикой природой, ее бурными реками,
+                  крутыми горами и духом путешествий. Названный в честь
+                  национального парка Торрес‑дель‑Пайне в Патагонии, этот
+                  автомобиль отличается динамичным и брутальным характером.
+                </p>
+              </div>
+              <ul class="list list-p s-catalog__info-list">
+                <li>Кредит от 0,01% на срок до 96 месяцев</li>
+                <li>Выгода в трейд-ин – до 250 000 ₽</li>
+                <li>Покупка за 1 день</li>
+              </ul>
+              <div class="s-catalog__info-buttons">
+                <a
+                  href="#modal-feedback"
+                  data-fancybox
+                  data-modal-title="Запись на тест-драйв"
+                  data-target-note="#modal-feedback .input-note"
+                  data-btn-note="Запись на тест драйв: KORANDO"
+                  class="btn-s"
+                >
+                  <span>Записаться на тест-драйв</span>
+                </a>
+                <a href="#" class="btn-s _outline">
+                  <span>Подробнее о модели</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div data-tab="tab-catalog-3">
+            <div class="s-catalog__info">
+              <div class="s-catalog__info-head">
+                <div class="s-catalog__info-title">TIVOLI</div>
+                <div class="s-catalog__price">от 3 254 000 ₽</div>
+              </div>
+              <div class="s-catalog__price-grid">
+                <div class="item-grid">
+                  <div class="item-name">Выгода до</div>
+                  <div class="item-price">499 000 ₽</div>
+                </div>
+                <div class="item-grid">
+                  <div class="item-name">Еж. платеж</div>
+                  <div class="item-price">от 6 000 ₽</div>
+                </div>
+              </div>
+              <div class="content-box s-catalog__info-content">
+                <p>
+                  Кроссовер, вдохновленный дикой природой, ее бурными реками,
+                  крутыми горами и духом путешествий. Названный в честь
+                  национального парка Торрес‑дель‑Пайне в Патагонии, этот
+                  автомобиль отличается динамичным и брутальным характером.
+                </p>
+              </div>
+              <ul class="list list-p s-catalog__info-list">
+                <li>Кредит от 0,01% на срок до 96 месяцев</li>
+                <li>Выгода в трейд-ин – до 250 000 ₽</li>
+                <li>Покупка за 1 день</li>
+              </ul>
+              <div class="s-catalog__info-buttons">
+                <a
+                  href="#modal-feedback"
+                  data-fancybox
+                  data-modal-title="Запись на тест-драйв"
+                  data-target-note="#modal-feedback .input-note"
+                  data-btn-note="Запись на тест драйв: KORANDO"
+                  class="btn-s"
+                >
+                  <span>Записаться на тест-драйв</span>
+                </a>
+                <a href="#" class="btn-s _outline">
+                  <span>Подробнее о модели</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="s-catalog__gallery">
+        <div class="tabs-content">
+          <div data-tab="tab-catalog-0" class="_active _show">
+            <img
+              src="img/catalog-img.png"
+              alt="image"
+              class="s-catalog__gallery-preview"
+            />
+            <img
+              src="img/catalog-gallery.jpg"
+              alt="image"
+              class="s-catalog__gallery-img"
+            />
+          </div>
+          <div data-tab="tab-catalog-1">
+            <img
+              src="img/catalog-img.png"
+              alt="image"
+              class="s-catalog__gallery-preview"
+            />
+            <img
+              src="img/catalog-gallery.jpg"
+              alt="image"
+              class="s-catalog__gallery-img"
+            />
+          </div>
+          <div data-tab="tab-catalog-2">
+            <img
+              src="img/catalog-img.png"
+              alt="image"
+              class="s-catalog__gallery-preview"
+            />
+            <img
+              src="img/catalog-gallery.jpg"
+              alt="image"
+              class="s-catalog__gallery-img"
+            />
+          </div>
+          <div data-tab="tab-catalog-3">
+            <img
+              src="img/catalog-img.png"
+              alt="image"
+              class="s-catalog__gallery-preview"
+            />
+            <img
+              src="img/catalog-gallery.jpg"
+              alt="image"
+              class="s-catalog__gallery-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-m s-promo" id="s-promo">
+  <div class="container">
+    <div class="sect-head">
+      <div class="s-title">Все акции и специальные предложения</div>
+    </div>
+    <div class="swiper s-promo__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <article class="card-promo">
+            <div class="card-promo__gallery">
+              <img src="img/promo.jpg" alt="image" class="card-promo__img" />
+              <div class="card-promo__tag">Выгода до 600 000 руб*</div>
+            </div>
+            <div class="card-promo__date">Срок акции до 12.10.2026</div>
+            <h3 class="card-promo__title t-title">Кредит 0,01% до 7 лет</h3>
+            <div class="content-box card-promo__content">
+              <p>Минимальная ставка и быстрый одобрительный процесс</p>
+            </div>
+            <a
+              href="#modal-feedback"
+              data-fancybox
+              data-btn-note="Акция: Кредит 0,01% до 7 лет"
+              data-target-note="#modal-feedback .input-note"
+              data-modal-title="Получить предложение"
+              class="btn-s _outline card-promo__btn"
+            >
+              <span>Получить предложение</span>
+            </a>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="card-promo">
+            <div class="card-promo__gallery">
+              <img src="img/promo.jpg" alt="image" class="card-promo__img" />
+              <div class="card-promo__tag">Выгода до 600 000 руб*</div>
+            </div>
+            <div class="card-promo__date">Срок акции до 12.10.2026</div>
+            <h3 class="card-promo__title t-title">Кредит 0,01% до 7 лет</h3>
+            <div class="content-box card-promo__content">
+              <p>Минимальная ставка и быстрый одобрительный процесс</p>
+            </div>
+            <a
+              href="#modal-feedback"
+              data-fancybox
+              data-btn-note="Акция: Кредит 0,01% до 7 лет"
+              data-target-note="#modal-feedback .input-note"
+              data-modal-title="Получить предложение"
+              class="btn-s _outline card-promo__btn"
+            >
+              <span>Получить предложение</span>
+            </a>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="card-promo">
+            <div class="card-promo__gallery">
+              <img src="img/promo.jpg" alt="image" class="card-promo__img" />
+              <div class="card-promo__tag">Выгода до 600 000 руб*</div>
+            </div>
+            <div class="card-promo__date">Срок акции до 12.10.2026</div>
+            <h3 class="card-promo__title t-title">Кредит 0,01% до 7 лет</h3>
+            <div class="content-box card-promo__content">
+              <p>Минимальная ставка и быстрый одобрительный процесс</p>
+            </div>
+            <a
+              href="#modal-feedback"
+              data-fancybox
+              data-btn-note="Акция: Кредит 0,01% до 7 лет"
+              data-target-note="#modal-feedback .input-note"
+              data-modal-title="Получить предложение"
+              class="btn-s _outline card-promo__btn"
+            >
+              <span>Получить предложение</span>
+            </a>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="card-promo">
+            <div class="card-promo__gallery">
+              <img src="img/promo.jpg" alt="image" class="card-promo__img" />
+              <div class="card-promo__tag">Выгода до 600 000 руб*</div>
+            </div>
+            <div class="card-promo__date">Срок акции до 12.10.2026</div>
+            <h3 class="card-promo__title t-title">Кредит 0,01% до 7 лет</h3>
+            <div class="content-box card-promo__content">
+              <p>Минимальная ставка и быстрый одобрительный процесс</p>
+            </div>
+            <a
+              href="#modal-feedback"
+              data-fancybox
+              data-btn-note="Акция: Кредит 0,01% до 7 лет"
+              data-target-note="#modal-feedback .input-note"
+              data-modal-title="Получить предложение"
+              class="btn-s _outline card-promo__btn"
+            >
+              <span>Получить предложение</span>
+            </a>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="card-promo">
+            <div class="card-promo__gallery">
+              <img src="img/promo.jpg" alt="image" class="card-promo__img" />
+              <div class="card-promo__tag">Выгода до 600 000 руб*</div>
+            </div>
+            <div class="card-promo__date">Срок акции до 12.10.2026</div>
+            <h3 class="card-promo__title t-title">Кредит 0,01% до 7 лет</h3>
+            <div class="content-box card-promo__content">
+              <p>Минимальная ставка и быстрый одобрительный процесс</p>
+            </div>
+            <a
+              href="#modal-feedback"
+              data-fancybox
+              data-btn-note="Акция: Кредит 0,01% до 7 лет"
+              data-target-note="#modal-feedback .input-note"
+              data-modal-title="Получить предложение"
+              class="btn-s _outline card-promo__btn"
+            >
+              <span>Получить предложение</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="slider-scrollbar"></div>
+  </div>
+</section>
+
+    <section class="sect-p s-test" id="s-test">
+  <div class="container">
+    <picture class="s-test__bg">
+      <img src="img/test.jpg" alt="image" />
+    </picture>
+    <div class="s-test__body">
+      <div class="s-title s-test__title">Запишитесь на тест-драйв</div>
+      <div class="content-box s-test__content">
+        <p>
+          Запишитесь на пробную поездку и <br> получите индивидуальное предложение
+        </p>
+      </div>
+      <div class="s-test__form-wrap">
+        <form action="#" class="s-test__form">
+          <div class="form-grid">
+            <div class="form-control _full">
+              <div class="form-control-name">Телефон</div>
+              <input
+                type="tel"
+                placeholder="+7 (___) ___-__-__"
+                class="input"
+              />
+            </div>
+            <div class="form-control">
+              <div class="form-control-name">Выберите модель</div>
+              <div class="select">
+                <div class="select-btn">
+                  <input
+                    type="text"
+                    placeholder="KORANDO"
+                    readonly
+                    class="input select-input"
+                  />
+                  <i class="icon-bottom select-arrow"></i>
+                </div>
+                <div class="select-body">
+                  <div class="select-item">KORANDO 1</div>
+                  <div class="select-item">KORANDO 2</div>
+                  <div class="select-item">KORANDO 3</div>
+                  <div class="select-item">KORANDO 4</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-control">
+              <div class="form-control-name">Выберите удобную дату</div>
+              <input type="text" placeholder="Желаемая дата" class="input" />
+            </div>
+            <div class="form-control _full">
+              <div class="check-wrap">
+                <span class="wpcf7-form-control-wrap" data-name="acceptance-60">
+                  <span class="wpcf7-form-control wpcf7-acceptance">
+                    <span class="wpcf7-list-item">
+                      <label>
+                        <input
+                          type="checkbox"
+                          name="acceptance-60"
+                          value="1"
+                          aria-invalid="false"
+                        />
+                        <span class="wpcf7-list-item-label">
+                          <span>
+                            Я соглашаюсь с 
+                            <a href="/personal-data" target="_blank">
+                              Правилами обработки персональных данных
+                            </a>
+                          </span>
+                        </span>
+                      </label>
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="form-control _full">
+              <div class="check-wrap">
+                <span class="wpcf7-form-control-wrap" data-name="acceptance-60">
+                  <span class="wpcf7-form-control wpcf7-acceptance">
+                    <span class="wpcf7-list-item">
+                      <label>
+                        <input
+                          type="checkbox"
+                          name="acceptance-60"
+                          value="1"
+                          aria-invalid="false"
+                        />
+                        <span class="wpcf7-list-item-label">
+                          <span>
+                            Я соглашаюсь на получение
+                            <a href="/advertising-mail" target="_blank">
+                              информационно-рекламной рассылки
+                            </a>
+                          </span>
+                        </span>
+                      </label>
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <button type="submit" class="btn-s"><span>Записаться на тест-драйв</span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-p s-quiz bg-concrete" id="s-quiz">
+  <div class="container">
+    <div class="s-quiz__wrap">
+      <img src="img/quiz.jpg" alt="" />
+    </div>
+  </div>
+  <img src="img/logo-bg.png" alt="logo" class="s-quiz__logo" />
+</section>
+
+    <section class="sect-p bg-concrete s-credit" id="s-credit">
+  <div class="container">
+    <div class="s-credit__wrap">
+      <div class="s-credit__body">
+        <div class="s-credit__head">
+          <div class="s-title">АВТОКРЕДИТ на KGM</div>
+          <div class="s-credit__tag">
+            В кредит от
+            <strong>0,01%</strong>
+          </div>
+        </div>
+        <div class="content-box s-credit__content">
+          <p>
+            Специальные программы покупки в кредит. Сниженные процентные ставки
+            при поддержке производителя.
+          </p>
+        </div>
+        <form action="#" class="s-credit__form">
+          <div class="form-grid">
+            <div class="form-control">
+              <input type="text" placeholder="Имя" class="input" />
+            </div>
+            <div class="form-control">
+              <input type="tel" placeholder="Телефон" class="input" />
+            </div>
+            <div class="form-control _full">
+              <div class="select">
+                <div class="select-btn">
+                  <input
+                    type="text"
+                    placeholder="Модель"
+                    readonly
+                    class="input select-input"
+                  />
+                  <i class="icon-bottom select-arrow"></i>
+                </div>
+                <div class="select-body">
+                  <div class="select-item">KORANDO 1</div>
+                  <div class="select-item">KORANDO 2</div>
+                  <div class="select-item">KORANDO 3</div>
+                  <div class="select-item">KORANDO 4</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-control">
+              <input type="text" placeholder="Срок кредита" class="input" />
+            </div>
+            <div class="form-control">
+              <input
+                type="text"
+                placeholder="Первоначальный взнос"
+                class="input"
+              />
+            </div>
+            <div class="form-control _full">
+              <div class="check-wrap">
+                <span class="wpcf7-form-control-wrap" data-name="acceptance-60">
+                  <span class="wpcf7-form-control wpcf7-acceptance">
+                    <span class="wpcf7-list-item">
+                      <label>
+                        <input
+                          type="checkbox"
+                          name="acceptance-60"
+                          value="1"
+                          aria-invalid="false"
+                        />
+                        <span class="wpcf7-list-item-label">
+                          <span>
+                            Я соглашаюсь с 
+                            <a href="/personal-data" target="_blank">
+                              Правилами обработки персональных данных
+                            </a>
+                          </span>
+                        </span>
+                      </label>
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="form-control _full">
+              <div class="check-wrap">
+                <span class="wpcf7-form-control-wrap" data-name="acceptance-60">
+                  <span class="wpcf7-form-control wpcf7-acceptance">
+                    <span class="wpcf7-list-item">
+                      <label>
+                        <input
+                          type="checkbox"
+                          name="acceptance-60"
+                          value="1"
+                          aria-invalid="false"
+                        />
+                        <span class="wpcf7-list-item-label">
+                          <span>
+                            Я соглашаюсь на получение
+                            <a href="/advertising-mail" target="_blank">
+                              информационно-рекламной рассылки
+                            </a>
+                          </span>
+                        </span>
+                      </label>
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <button type="submit" class="btn-s">
+              <span>Отправить</span>
+            </button>
+          </div>
+        </form>
+        <p class="s-credit__form-content">
+          Минимальные платежи без переплат. Скидки на автомобили при оформлении
+          кредита. Оставьте заявку и узнайте условия.
+        </p>
+      </div>
+      <div class="s-credit__gallery">
+        <img src="img/credit.jpg" alt="image" class="s-credit__img">
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="s-partners sect-m" id="s-partners">
+  <div class="container">
+    <div class="sect-head">
+      <div class="s-title">10 банков-партнеров</div>
+    </div>
+    <div class="swiper s-partners__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide s-partners__slide">
+          <img src="img/partner.png" alt="logo" />
+        </div>
+        <div class="swiper-slide s-partners__slide">
+          <img src="img/partner.png" alt="logo" />
+        </div>
+        <div class="swiper-slide s-partners__slide">
+          <img src="img/partner.png" alt="logo" />
+        </div>
+        <div class="swiper-slide s-partners__slide">
+          <img src="img/partner.png" alt="logo" />
+        </div>
+        <div class="swiper-slide s-partners__slide">
+          <img src="img/partner.png" alt="logo" />
+        </div>
+        <div class="swiper-slide s-partners__slide">
+          <img src="img/partner.png" alt="logo" />
+        </div>
+        <div class="swiper-slide s-partners__slide">
+          <img src="img/partner.png" alt="logo" />
+        </div>
+        <div class="swiper-slide s-partners__slide">
+          <img src="img/partner.png" alt="logo" />
+        </div>
+        <div class="swiper-slide s-partners__slide">
+          <img src="img/partner.png" alt="logo" />
+        </div>
+        <div class="swiper-slide s-partners__slide">
+          <img src="img/partner.png" alt="logo" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-p bg-concrete s-team" id="s-team">
+  <div class="container">
+    <div class="sect-head">
+      <div class="s-title">Вас будут сопровождать</div>
+    </div>
+    <div class="swiper s-team__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <article class="card-team">
+            <div class="card-team__gallery">
+              <img src="img/team.jpg" alt="image" />
+            </div>
+            <div class="card-team__body">
+              <h3 class="t-title card-team__title">Иван Иванов</h3>
+              <div class="card-team__post">Должность</div>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="card-team">
+            <div class="card-team__gallery">
+              <img src="img/team.jpg" alt="image" />
+            </div>
+            <div class="card-team__body">
+              <h3 class="t-title card-team__title">Иван Иванов</h3>
+              <div class="card-team__post">Должность</div>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="card-team">
+            <div class="card-team__gallery">
+              <img src="img/team.jpg" alt="image" />
+            </div>
+            <div class="card-team__body">
+              <h3 class="t-title card-team__title">Иван Иванов</h3>
+              <div class="card-team__post">Должность</div>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="card-team">
+            <div class="card-team__gallery">
+              <img src="img/team.jpg" alt="image" />
+            </div>
+            <div class="card-team__body">
+              <h3 class="t-title card-team__title">Иван Иванов</h3>
+              <div class="card-team__post">Должность</div>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="card-team">
+            <div class="card-team__gallery">
+              <img src="img/team.jpg" alt="image" />
+            </div>
+            <div class="card-team__body">
+              <h3 class="t-title card-team__title">Иван Иванов</h3>
+              <div class="card-team__post">Должность</div>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="card-team">
+            <div class="card-team__gallery">
+              <img src="img/team.jpg" alt="image" />
+            </div>
+            <div class="card-team__body">
+              <h3 class="t-title card-team__title">Иван Иванов</h3>
+              <div class="card-team__post">Должность</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="slider-scrollbar"></div>
+  </div>
+</section>
+
+    <section class="sect-m s-about">
+  <div class="container">
+    <div class="s-about__wrap">
+      <div class="s-about__info">
+        <img src="img/logo-about.svg" alt="logo" class="s-about__logo" />
+        <h1 class="s-title">Купить KGM у официального дилера АВТОСЕТЬ.РФ</h1>
+        <div class="content-box s-about__content">
+          <p>
+            Мы, компания АВТОСЕТЬ РФ занимаемся продажей новых автомобилей
+            предоставляем услуги сервиса в России.
+          </p>
+          <p>
+            Нашими клиентами являются физические и юридические лица – покупатели
+            и продавцы автомобилей; производители и дистрибьюторы автомобильных
+            брендов.
+          </p>
+        </div>
+      </div>
+      <a href="img/catalog-gallery.jpg" data-fancybox class="s-about__gallery">
+        <img src="img/about.jpg" alt="image">
+        <div class="btn-play _outline-white">
+          <i class="icon-play"></i>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-p s-news" id="s-news">
+  <div class="container">
+    <div class="sect-head">
+      <h2 class="s-title">Новости нашего дилерского центра</h2>
+    </div>
+    <div class="swiper s-news__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#" class="card-new">
+            <div class="card-new__gallery">
+              <img src="img/new.jpg" alt="image" class="card-new__img" />
+            </div>
+            <div class="card-new__date">12.10.2026</div>
+            <div class="card-new__title">
+              Курс ценных бумаг связывает нас с нашим прошлым
+            </div>
+            <div class="btn-s _white card-new__btn">Подробнее</div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="card-new">
+            <div class="card-new__gallery">
+              <img src="img/promo.jpg" alt="image" class="card-new__img" />
+            </div>
+            <div class="card-new__date">12.10.2026</div>
+            <div class="card-new__title">
+              Воистину радостный звук: глас грядущего поколения
+            </div>
+            <div class="btn-s _white card-new__btn">Подробнее</div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="card-new">
+            <div class="card-new__gallery">
+              <img src="img/promo.jpg" alt="image" class="card-new__img" />
+            </div>
+            <div class="card-new__date">12.10.2026</div>
+            <div class="card-new__title">Воистину радостный звук</div>
+            <div class="btn-s _white card-new__btn">Подробнее</div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="card-new">
+            <div class="card-new__gallery">
+              <img src="img/promo.jpg" alt="image" class="card-new__img" />
+            </div>
+            <div class="card-new__date">12.10.2026</div>
+            <div class="card-new__title">
+              Воистину радостный звук: глас грядущего поколения
+            </div>
+            <div class="btn-s _white card-new__btn">Подробнее</div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="card-new">
+            <div class="card-new__gallery">
+              <img src="img/promo.jpg" alt="image" class="card-new__img" />
+            </div>
+            <div class="card-new__date">12.10.2026</div>
+            <div class="card-new__title">Воистину радостный звук</div>
+            <div class="btn-s _white card-new__btn">Подробнее</div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="card-new">
+            <div class="card-new__gallery">
+              <img src="img/promo.jpg" alt="image" class="card-new__img" />
+            </div>
+            <div class="card-new__date">12.10.2026</div>
+            <div class="card-new__title">
+              Воистину радостный звук: глас грядущего поколения
+            </div>
+            <div class="btn-s _white card-new__btn">Подробнее</div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="card-new">
+            <div class="card-new__gallery">
+              <img src="img/promo.jpg" alt="image" class="card-new__img" />
+            </div>
+            <div class="card-new__date">12.10.2026</div>
+            <div class="card-new__title">Воистину радостный звук</div>
+            <div class="btn-s _white card-new__btn">Подробнее</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="slider-scrollbar _white"></div>
+  </div>
+</section>
+
+    <section class="sect-m s-reviews" id="s-reviews">
+  <div class="container">
+    <div class="sect-head">
+      <h2 class="s-title">Реальные отзывы о нашем автосалоне</h2>
+    </div>
+  </div>
+</section>
+    <section class="sect-m s-contacts" id="s-contacts">
+  <div class="container">
+    <div class="sect-head">
+      <div class="sect-head__wrap">
+        <h2 class="s-title">Контактная информация дилера KGM</h2>
+        <a
+          href="#"
+          target="_blank"
+          rel="nofollow"
+          class="btn-s s-contacts__btn"
+        >
+          <span>Проложить маршрут</span>
+        </a>
+      </div>
+    </div>
+    <div class="s-contacts__wrap">
+      <div class="s-contacts__body">
+        <div class="s-contacts__item">
+          <div class="item-name">Телефон:</div>
+          <a href="tel:+78462115946" class="item-tel">+7 (846) 211-59-46</a>
+        </div>
+        <div class="s-contacts__item">
+          <div class="item-name">Наш адрес:</div>
+          <div class="item-val">г. Самара, Южное шоссе 10А</div>
+        </div>
+        <div class="s-contacts__item">
+          <div class="item-name">График работы:</div>
+          <div class="item-val">Ежедневно с 9:00 до 20:00</div>
+        </div>
+        <div class="s-contacts__item">
+          <div class="item-name">Мессенджеры:</div>
+          <div class="social">
+            <a href="#" target="_blank" rel="nofollow" class="social-item _white">
+              <span><i class="icon-tg"></i></span>
+            </a>
+            <a href="#" target="_blank" rel="nofollow" class="social-item _white">
+              <span><i class="icon-max"></i></span>
+            </a>
+            <a href="#" target="_blank" rel="nofollow" class="social-item _white">
+              <span><i class="icon-vk"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="map s-contacts__map"
+        data-center="[53.1410115712659,50.181023499999974]"
+        data-zoom="18"
+      ></div>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-m s-faq" id="s-faq">
+  <div class="container">
+    <div data-spollers class="s-faq__grid">
+      <div class="s-faq__spoller">
+        <div data-spoller class="s-faq__spoller-btn">
+          <span>Можно ли оформить без первоначального взноса?</span>
+          <i class="icon-bottom"></i>
+        </div>
+        <div>
+          <div class="s-faq__content content-box">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+              nihil! Asperiores est porro consectetur modi eius saepe
+              perferendis amet maxime!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="s-faq__spoller">
+        <div data-spoller class="s-faq__spoller-btn">
+          <span>Можно ли оформить без первоначального взноса?</span>
+          <i class="icon-bottom"></i>
+        </div>
+        <div>
+          <div class="s-faq__content content-box">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+              nihil! Asperiores est porro consectetur modi eius saepe
+              perferendis amet maxime!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="s-faq__spoller">
+        <div data-spoller class="s-faq__spoller-btn">
+          <span>Можно ли оформить без первоначального взноса?</span>
+          <i class="icon-bottom"></i>
+        </div>
+        <div>
+          <div class="s-faq__content content-box">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+              nihil! Asperiores est porro consectetur modi eius saepe
+              perferendis amet maxime!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="s-faq__spoller">
+        <div data-spoller class="s-faq__spoller-btn">
+          <span>Можно ли оформить без первоначального взноса?</span>
+          <i class="icon-bottom"></i>
+        </div>
+        <div>
+          <div class="s-faq__content content-box">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+              nihil! Asperiores est porro consectetur modi eius saepe
+              perferendis amet maxime!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="s-faq__spoller">
+        <div data-spoller class="s-faq__spoller-btn">
+          <span>Можно ли оформить без первоначального взноса?</span>
+          <i class="icon-bottom"></i>
+        </div>
+        <div>
+          <div class="s-faq__content content-box">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+              nihil! Asperiores est porro consectetur modi eius saepe
+              perferendis amet maxime!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="s-faq__spoller">
+        <div data-spoller class="s-faq__spoller-btn">
+          <span>Можно ли оформить без первоначального взноса?</span>
+          <i class="icon-bottom"></i>
+        </div>
+        <div>
+          <div class="s-faq__content content-box">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+              nihil! Asperiores est porro consectetur modi eius saepe
+              perferendis amet maxime!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__main">
+        <div class="footer__logos">
+          <a href="/" class="footer__logo">
+            <img src="img/logo-white.svg" alt="logo" />
+          </a>
+          <img src="img/logo-2-white.svg" alt="logo" class="footer__logo-type" />
+        </div>
+        <div class="footer__logo-content">
+          Все права защищены. Копирование материалов строго по согласию
+          администрации сайта.
+        </div>
+      </div>
+      <ul class="list footer__list anchors">
+        <li><a href="/#s-catalog">Модели</a></li>
+        <li><a href="/#s-promo">Специальные предложения</a></li>
+        <li><a href="/#s-tradein">Трейд-ин</a></li>
+        <li><a href="/#s-credit">Рассрочка</a></li>
+        <li><a href="/#s-test">Тест-драйв</a></li>
+        <li><a href="/#s-reviews">Отзывы</a></li>
+        <li><a href="/#s-contacts">Контакты</a></li>
+      </ul>
+      <div class="footer__contacts">
+        <a href="tel:+78462115946" class="footer__tel">+7 (846) 211-59-46</a>
+        <div class="footer__address">г. Самара, Южное шоссе 10А</div>
+        <div class="footer__work-time">Ежедневно с 9:00 до 20:00</div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copyright">© ООО "АРМ-3", ИНН: 000000000</div>
+      <ul class="list footer__bottom-list">
+        <li><a href="#" target="_blank">Политика конфиденциальности</a></li>
+        <li><a href="#" target="_blank">Политика обработки персональных данных</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="./files/swiper/swiper.min.js"></script>
+<script src="./files/fancybox/fancybox.min.js"></script>
+<script src="./files/inputmask/inputmask.min.js"></script>
+
+  
+  <script src="./js/app.js?ver=mul2fhx2"></script>
+</body>
+</html>

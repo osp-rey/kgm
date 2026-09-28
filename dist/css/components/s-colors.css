@@ -1,0 +1,132 @@
+.s-colors {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  z-index: 1;
+}
+
+.s-colors__decor {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.s-colors__slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.s-colors__slider-wrapper .slider-arrow {
+  position: relative;
+  z-index: 1;
+}
+
+.s-colors__slider {
+  width: 1200px;
+  overflow: visible !important;
+  max-width: 100%;
+  margin: 0 !important;
+}
+
+.s-colors__slide.swiper-slide-active img {
+  opacity: 1;
+}
+
+.s-colors__slide img {
+  display: block;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s linear !important;
+}
+
+.s-colors__tab-name {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.s-colors__tabs-nav {
+  width: fit-content !important;
+  max-width: 100%;
+  margin: 30px auto 0px auto;
+  overflow: visible !important;
+}
+
+.s-colors__tab-btn {
+  overflow: hidden;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 185px !important;
+  max-width: 100%;
+  clip-path: polygon(16px 0%, 100% 0%, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0% 100%, 0% 16px);
+  aspect-ratio: 1/0.55;
+  transition: background-color 0.3s ease !important;
+}
+
+.s-colors__tab-btn._active {
+  background-color: white;
+  pointer-events: none;
+}
+
+.s-colors__tab-btn img {
+  display: block;
+  width: 150px;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (max-width: 1365px) {
+  .s-colors__slider {
+    width: 1055px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .s-colors__slider {
+    width: 880px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .s-colors__slider-wrapper .slider-arrow {
+    display: none;
+  }
+
+  .s-colors__slider {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .s-colors__tab-name {
+    margin-top: 20px;
+  }
+
+  .s-colors__tab-btn {
+    width: 150px !important;
+  }
+
+  .s-colors__tab-btn img {
+    width: 130px;
+  }
+}
+
+@media (any-hover: hover) {
+  .s-colors__tab-btn:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media (hover: none) {
+  .s-colors__tab-btn:active {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
